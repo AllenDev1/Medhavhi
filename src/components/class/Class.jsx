@@ -4,6 +4,8 @@ import avtar from "../../assets/Avatar.svg";
 import "./class.scss";
 import time from "../../assets/hourglass-02.svg";
 import ppt from "../../assets/ppt-icon-482 1.svg";
+import download from "../../assets/download-02.svg";
+import Grades from "./Grades";
 
 const Class = () => {
 	return (
@@ -14,7 +16,7 @@ const Class = () => {
 						<Col className="top_col" md={1}>
 							<img src={avtar} alt="" />
 						</Col>
-						<Col className="top_col2">
+						<Col className="top_col2" >
 							Lorem ipsum dolor sit amet consectetur. Scelerisque
 							aenean nibh.
 							<div className="lower_part">
@@ -42,7 +44,7 @@ const Class = () => {
 								</div>
 							</div>
 						</Col>
-						<Col className="badge-col" md={1}>
+						<Col className="badge-col" md={2}>
 							<Badge bg="white" className="badge">
 								<img src={time} alt="" />4 days
 							</Badge>
@@ -61,10 +63,16 @@ const Class = () => {
 							elementum ac vitae quam ullamcorper nunc.
 						</p>
 					</Row>
-					<Button>
+					<Button className="ppt_btn">
 						<img src={ppt} alt="" />
+						<span>
+							<p>Evolution chapter notes.</p>
+							<p>32.5 MB</p>
+						</span>
+						<img src={download} alt="" />
 					</Button>
 				</div>
+				<Grades />
 			</div>
 		</>
 	);

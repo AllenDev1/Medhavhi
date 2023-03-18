@@ -1,0 +1,193 @@
+.class {
+	.top_section {
+		background: #ffffff;
+		border-radius: 16px;
+		padding: 2em;
+		.top_row {
+			.top_col2 {
+				.lower_part {
+					display: flex;
+					align-items: center;
+					.sub {
+						display: flex;
+						align-items: center;
+						vertical-align: middle;
+						p {
+							margin-bottom: 0%;
+							font-style: normal;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 140%;
+							/* identical to box height, or 20px */
+
+							letter-spacing: 0.02em;
+
+							/* Jet (Primary) */
+
+							color: #30323d;
+						}
+						.img_stack {
+							position: relative;
+							display: flex;
+							margin-left: 1rem;
+							img {
+								border: 2px solid #fcfbf9;
+								height: 32px;
+								width: 32px;
+								border-radius: 50%;
+								object-fit: cover;
+							}
+							img:nth-child(odd) {
+								margin-left: -10px;
+							}
+							img:nth-child(even) {
+								margin-left: -10px;
+							}
+							img:nth-child(1) {
+								margin-left: 0px;
+							}
+						}
+					}
+					.assigned {
+						display: flex;
+						align-items: center;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 140%;
+						/* identical to box height, or 20px */
+
+						letter-spacing: 0.02em;
+
+						/* Jet (Primary) */
+
+						color: #30323d;
+						p {
+							margin-bottom: 0%;
+						}
+						margin-left: 1rem;
+						.date {
+							font-style: normal;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 21px;
+							/* identical to box height, or 150% */
+
+							letter-spacing: 0.15px;
+
+							/* Spanish Gray */
+
+							color: #9a9a9a;
+							margin-left: 1rem;
+						}
+					}
+				}
+			}
+			.badge-col {
+				float: right;
+				display: grid;
+				justify-content: flex-end;
+				height: 1rem;
+
+				.badge {
+					border: 1px solid #37b76c;
+					border-radius: 12px;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 120%;
+					/* or 14px */
+
+					letter-spacing: 0.02em;
+
+					/* Medium sea green */
+
+					color: #37b76c;
+
+					align-items: center;
+					display: flex;
+					gap: 0.5rem;
+				}
+			}
+		}
+		.text-row {
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 140%;
+				/* or 20px */
+
+				letter-spacing: 0.03em;
+
+				/* Spanish Gray */
+
+				color: #9a9a9a;
+			}
+		}
+		.ppt_btn {
+			background: #ffffff;
+			/* Light elevation 2 */
+			box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.01),
+				1px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.09),
+				0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+			border: none;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+			justify-content: space-between;
+			gap: 1rem;
+			span {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 140%;
+				/* identical to box height, or 20px */
+
+				letter-spacing: 0.02em;
+
+				/* Jet (Primary) */
+
+				color: #30323d;
+				text-align: initial;
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.class {
+		.top_section {
+			.top_row {
+				.top_col2 {
+					.lower_part {
+						margin: 1rem 0rem;
+						.sub {
+							display: block;
+							.img_stack {
+								margin: 0%;
+								img {
+									height: 24px;
+									width: 24px;
+								}
+							}
+						}
+					}
+				}
+				.badge-col{
+					display: block;
+					height: auto;
+					.badge{
+						margin: 1rem 0rem;
+						text-align: center;
+						justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}

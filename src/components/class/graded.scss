@@ -1,0 +1,27 @@
+.grades_content {
+	.grade_btn {
+		button {
+			background: #37b76c !important;
+			border-radius: 8px !important;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+            p{
+                margin-bottom: 0;
+            }
+			.score {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 125%;
+				/* identical to box height, or 20px */
+
+				letter-spacing: 0.02em;
+
+				/* white */
+
+				color: #ffffff;
+			}
+		}
+	}
+}
