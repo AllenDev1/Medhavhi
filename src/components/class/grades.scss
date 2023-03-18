@@ -1,0 +1,46 @@
+.grades {
+	background: #ffffff;
+	border-radius: 16px;
+	.grades_content {
+		.grades_tabs {
+			border: none;
+			.nav-item {
+				border: none;
+				button {
+					border: none;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 140%;
+					/* identical to box height, or 20px */
+
+					letter-spacing: 0.02em;
+                    color: #000;
+                    width: 160px;
+                    height: 44px;
+				}
+				.active {
+					background: #2bb8d6;
+					border-radius: 4px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.grades {
+		.grades_content {
+			.grades_tabs {
+				.nav-item {
+					button {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	
+}
