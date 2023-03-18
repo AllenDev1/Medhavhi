@@ -1,0 +1,246 @@
+.submission_modal {
+	.submission_header {
+		.submission_title {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 125%;
+			/* identical to box height, or 20px */
+
+			letter-spacing: 0.02em;
+
+			/* Jet (Primary) */
+
+			color: #30323d;
+		}
+	}
+	.submission_body {
+		.students_img_data {
+			.not_graded_content_left {
+				display: flex;
+				.not_graded_content_left_img {
+					img {
+						width: 64px;
+						height: 64px;
+						border-radius: 4px;
+					}
+				}
+				.not_graded_content_left_text {
+					margin-left: 1rem;
+
+					p {
+						margin-bottom: 0.3rem;
+					}
+					.name {
+						font-style: normal;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 140%;
+						/* identical to box height, or 20px */
+
+						letter-spacing: 0.02em;
+
+						/* Jet (Primary) */
+
+						color: #30323d;
+					}
+					.date {
+						font-style: normal;
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 130%;
+						/* identical to box height, or 16px */
+
+						letter-spacing: 0.02em;
+
+						/* Spanish Gray */
+
+						color: #9a9a9a;
+					}
+					.when {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 130%;
+						/* identical to box height, or 16px */
+
+						letter-spacing: 0.02em;
+
+						/* Medium sea green */
+
+						color: #37b76c;
+					}
+					.late {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 130%;
+						/* identical to box height, or 16px */
+
+						letter-spacing: 0.02em;
+
+						/* Paradise Pink (error) */
+
+						color: #ea526f;
+					}
+				}
+			}
+		}
+		.subed_text {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 140%;
+			/* identical to box height, or 20px */
+
+			letter-spacing: 0.03em;
+
+			/* Spanish Gray */
+
+			color: #9a9a9a;
+			margin-top: 1rem;
+		}
+		.btns_download {
+			display: flex;
+			gap: 1rem;
+
+			.ppt_btn {
+				background: #ffffff;
+				/* Light elevation 2 */
+				box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.01),
+					1px 1px 1px rgba(0, 0, 0, 0.05),
+					0px 0px 1px rgba(0, 0, 0, 0.09),
+					0px 0px 0px rgba(0, 0, 0, 0.1),
+					0px 0px 0px rgba(0, 0, 0, 0.1);
+				border: none;
+				border-radius: 8px;
+				display: flex;
+				align-items: center;
+				padding: 1rem;
+				justify-content: space-between;
+				gap: 1rem;
+				span {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 140%;
+					/* identical to box height, or 20px */
+
+					letter-spacing: 0.02em;
+
+					/* Jet (Primary) */
+
+					color: #30323d;
+					text-align: initial;
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.commenst_std {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 140%;
+			/* or 20px */
+
+			letter-spacing: 0.03em;
+
+			/* Jet (Primary) */
+
+			color: #30323d;
+		}
+		.grade_obtained {
+			height: auto;
+			input {
+				border: none;
+				border-bottom: 2px solid #30323d;
+				height: auto;
+				padding: 2rem 0rem;
+				text-align: center;
+				margin-right: 1rem;
+			}
+			button {
+				background: rgba(154, 154, 154, 0.1);
+				border-radius: 8px;
+				padding: 2rem 1rem;
+				border: none;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 125%;
+				/* identical to box height, or 20px */
+
+				letter-spacing: 0.02em;
+
+				/* Jet (Primary) */
+
+				color: #30323d;
+			}
+		}
+		.comment_box {
+			textarea {
+				background: rgba(154, 154, 154, 0.1);
+				border-radius: 8px;
+			}
+		}
+	}
+	.submission_footer {
+		border: none;
+		button {
+			background: #2bb8d6;
+			border-radius: 999px;
+			border: none;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 140%;
+			/* identical to box height, or 20px */
+
+			letter-spacing: 0.02em;
+
+			/* white */
+
+			color: #ffffff;
+			padding: 0.8rem 2rem;
+		}
+		.resubmission {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 140%;
+			/* identical to box height, or 20px */
+
+			letter-spacing: 0.02em;
+
+			/* Paradise Pink (error) */
+
+			color: #ea526f;
+			text-decoration: none;
+			margin-right: 1rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.submission_modal {
+		.submission_body {
+			.students_img_data {
+				.not_graded_content_left {
+					
+				}
+			}
+            .btns_download {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .grade_obtained{
+                input{
+                margin-right: 0%;
+
+                }
+            }
+		}
+	}
+}
