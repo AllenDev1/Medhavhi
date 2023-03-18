@@ -82,7 +82,7 @@ const Sidebar = () => {
 							(isActive ? "active" : "") + " nav-link"
 						}
 					>
-						<img src={forall} alt=".Messages" /> Messages
+						<img src={forall} alt=".Messages" /> Messages <span className="noti-span-sidebar">4</span>
 					</NavLink>
 					<NavLink
 						to="/Schedule"
@@ -109,9 +109,9 @@ const Sidebar = () => {
 						}
 					>
 						<img src={setting} alt=".setting" />
-						Setting
+						Setting <span className="noti-span-sidebar">4</span>
 					</NavLink>
-					<Button  className="nav-link mb-4 bg-white border-0" >
+					<Button className="nav-link mb-4 bg-white border-0">
 						<img src={logout} alt=".logout" />
 						Logout
 					</Button>
