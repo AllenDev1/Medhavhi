@@ -1,0 +1,100 @@
+.not_graded {
+	.not_graded_content {
+        height: 38vh;
+        overflow: scroll;
+		.students_table {
+			display: flex;
+			justify-content: space-between;
+			.students_img_data {
+				.not_graded_content_left {
+					display: flex;
+					.not_graded_content_left_img {
+						img {
+							width: 64px;
+							height: 64px;
+							border-radius: 4px;
+						}
+					}
+					.not_graded_content_left_text {
+						margin-left: 1rem;
+
+						p {
+							margin-bottom: 0.3rem;
+						}
+						.name {
+							font-style: normal;
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 140%;
+							/* identical to box height, or 20px */
+
+							letter-spacing: 0.02em;
+
+							/* Jet (Primary) */
+
+							color: #30323d;
+						}
+						.date {
+							font-style: normal;
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 130%;
+							/* identical to box height, or 16px */
+
+							letter-spacing: 0.02em;
+
+							/* Spanish Gray */
+
+							color: #9a9a9a;
+						}
+						.when {
+							font-style: normal;
+							font-weight: 500;
+							font-size: 12px;
+							line-height: 130%;
+							/* identical to box height, or 16px */
+
+							letter-spacing: 0.02em;
+
+							/* Medium sea green */
+
+							color: #37b76c;
+						}
+						.late {
+							font-style: normal;
+							font-weight: 500;
+							font-size: 12px;
+							line-height: 130%;
+							/* identical to box height, or 16px */
+
+							letter-spacing: 0.02em;
+
+							/* Paradise Pink (error) */
+
+							color: #ea526f;
+						}
+					}
+				}
+			}
+			.grade_btn {
+				button {
+					background: #2bb8d6;
+					border-radius: 999px;
+					border: none;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 140%;
+					/* identical to box height, or 20px */
+
+					letter-spacing: 0.02em;
+
+					/* white */
+
+					color: #ffffff;
+                    padding: 0.8rem 2rem;
+				}
+			}
+		}
+	}
+}
